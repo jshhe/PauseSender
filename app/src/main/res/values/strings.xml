@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name" translatable="false">PauseSender</string>
+    <string name="app_subtitle">把手机变成电脑的三个键蓝牙遥控器</string>
+    <string name="select_language">选择应用语言</string>
+    <string name="language_dialog_title">应用语言</string>
+    <string name="language_follow_system">跟随系统</string>
+    <string name="language_simplified_chinese" translatable="false">简体中文</string>
+    <string name="language_english" translatable="false">English</string>
+
+    <string name="status_checking">正在检查设备状态…</string>
+    <string name="status_ready_label">准备就绪</string>
+    <string name="status_connected_label">键盘已连接</string>
+    <string name="status_attention_label">需要操作</string>
+    <string name="status_error_label">出现问题</string>
+    <string name="status_support_ready">完成三个步骤后，即可在其他应用上方控制视频。</string>
+    <string name="status_support_connected">悬浮控制现在可以发送空格与左右方向键。</string>
+    <string name="status_support_attention">按照下方当前步骤继续，PauseSender 会保留已完成的设置。</string>
+    <string name="status_support_error">请检查权限和蓝牙状态，然后重试。</string>
+    <string name="status_allow_nearby_devices">请先允许附近设备权限</string>
+    <string name="status_enable_bluetooth">请开启蓝牙</string>
+    <string name="status_ready_to_pair">设备准备就绪，点按“开始配对”</string>
+
+    <string name="step_one" translatable="false">1</string>
+    <string name="step_two" translatable="false">2</string>
+    <string name="step_three" translatable="false">3</string>
+    <string name="section_prepare">准备手机</string>
+    <string name="section_pair">与电脑配对</string>
+    <string name="section_overlay">开启悬浮控制</string>
+    <string name="prepare_description">允许附近设备权限并打开蓝牙。PauseSender 不需要定位或无障碍权限。</string>
+    <string name="overlay_description">连接电脑后，开启一枚可拖动的玻璃控制条，随时暂停、前进或后退。</string>
+    <string name="grant_bluetooth">允许附近设备权限</string>
+    <string name="enable_bluetooth">开启蓝牙</string>
+    <string name="start_pairing">开始配对</string>
+    <string name="discover_again">再次使手机可被发现</string>
+    <string name="pairing_instructions">在电脑上打开“设置 → 蓝牙和设备 → 添加设备 → 蓝牙”，选择这部手机并在两端确认配对码。电脑应把它识别为键盘。</string>
+    <string name="paired_devices">已配对设备（点按以连接）</string>
+    <string name="no_paired_devices">尚无已配对设备</string>
+    <string name="grant_overlay">允许显示在其他应用上层</string>
+    <string name="show_overlay">显示悬浮按钮</string>
+    <string name="hide_overlay">隐藏悬浮按钮并断开</string>
+    <string name="stop_service">断开并停止</string>
+    <string name="backward">后退：发送左箭头</string>
+    <string name="pause">暂停/继续：发送空格</string>
+    <string name="forward">前进：发送右箭头</string>
+    <string name="drag_overlay">拖动悬浮按钮</string>
+    <string name="move_overlay_left">向左移动悬浮按钮</string>
+    <string name="move_overlay_right">向右移动悬浮按钮</string>
+    <string name="move_overlay_up">向上移动悬浮按钮</string>
+    <string name="move_overlay_down">向下移动悬浮按钮</string>
+    <string name="privacy_footer">无网络权限 · 无障碍服务 · 仅发送三个键盘按键</string>
+
+    <string name="state_not_started">尚未启动蓝牙键盘</string>
+    <string name="state_paired_connecting">已与 %1$s 配对，正在建立键盘连接…</string>
+    <string name="state_paired_connecting_unknown">设备已配对，正在建立键盘连接…</string>
+    <string name="state_service_starting">键盘服务已启动，正在准备 HID Profile…</string>
+    <string name="state_profile_ready">已取得 HID Profile，正在注册键盘…</string>
+    <string name="state_keyboard_registered">键盘已注册。请在电脑上搜索并配对这部手机</string>
+    <string name="state_keyboard_unregistered">HID 键盘已注销</string>
+    <string name="state_connecting_device">正在连接 %1$s…</string>
+    <string name="state_connecting_device_unknown">正在连接蓝牙设备…</string>
+    <string name="state_connected_device">已连接 %1$s，可以开启悬浮按钮</string>
+    <string name="state_connected_device_unknown">已连接电脑，可以开启悬浮按钮</string>
+    <string name="state_disconnecting_device">正在断开 %1$s…</string>
+    <string name="state_disconnecting_device_unknown">正在断开蓝牙连接…</string>
+    <string name="state_device_disconnected">%1$s 已断开</string>
+    <string name="state_device_disconnected_unknown">蓝牙设备已断开</string>
+    <string name="state_device_disconnected_overlay_paused">%1$s 已断开；悬浮按钮已暂停发送</string>
+    <string name="state_device_disconnected_overlay_paused_unknown">蓝牙设备已断开；悬浮按钮已暂停发送</string>
+    <string name="state_overlay_hidden_disconnecting">悬浮按钮已隐藏，正在断开蓝牙连接…</string>
+    <string name="state_overlay_hidden_disconnecting_device">悬浮按钮已隐藏，正在断开 %1$s…</string>
+    <string name="state_service_stopped">蓝牙键盘服务已停止</string>
+
+    <string name="notification_channel">蓝牙键盘连接</string>
+    <string name="notification_channel_description">保持 PauseSender 蓝牙键盘与悬浮控制运行</string>
+    <string name="notification_title">PauseSender 键盘正在运行</string>
+    <string name="notification_stop">停止</string>
+    <string name="notification_hide">隐藏并断开</string>
+
+    <string name="toast_bluetooth_not_enabled">蓝牙未开启</string>
+    <string name="toast_discoverable_denied">未允许手机被电脑发现</string>
+    <string name="toast_open_bluetooth_settings_failed">无法打开系统蓝牙界面</string>
+    <string name="toast_open_discoverable_settings_failed">无法打开蓝牙可发现设置</string>
+    <string name="toast_overlay_permission_granted_reconnect">悬浮权限已授予，请先重新连接电脑</string>
+    <string name="toast_connect_before_overlay_permission">请先完成电脑配对并建立键盘连接</string>
+    <string name="toast_open_overlay_settings_failed">无法打开悬浮窗权限设置</string>
+    <string name="toast_device_address_permission">无法读取蓝牙设备地址，附近设备权限可能已被撤销</string>
+    <string name="toast_bluetooth_permission_required">未取得附近设备权限，无法模拟蓝牙键盘</string>
+
+    <plurals name="discoverable_duration_seconds">
+        <item quantity="other">手机将在 %1$d 秒内可被电脑发现</item>
+    </plurals>
+
+    <string name="unsupported_bluetooth">此设备没有可用的经典蓝牙适配器</string>
+    <string name="error_missing_connect_device">没有提供要连接的蓝牙设备</string>
+    <string name="error_connect_before_overlay">请先连接电脑，再开启悬浮按钮</string>
+    <string name="error_overlay_permission_missing">尚未授予“显示在其他应用上层”权限</string>
+    <string name="error_unconfigured_key">拒绝发送未配置的按键</string>
+    <string name="error_foreground_service_permission">无法启动蓝牙前台服务，请确认附近设备权限已授权</string>
+    <string name="error_overlay_disconnect_failed">悬浮按钮已隐藏，但无法发起蓝牙断开操作</string>
+    <string name="error_hid_service_disconnected">蓝牙 HID 服务已断开，请关闭再重新开启蓝牙后重试</string>
+    <string name="error_hid_reply_report_permission">无法回复 HID 报告，附近设备权限可能已被撤销</string>
+    <string name="error_hid_profile_permission">无法取得蓝牙 HID Profile，附近设备权限可能已被撤销</string>
+    <string name="error_hid_profile_unavailable">无法取得蓝牙 HID Device Profile；手机厂商可能禁用了该功能</string>
+    <string name="error_hid_register_permission">无法注册 HID 键盘，附近设备权限可能已被撤销</string>
+    <string name="error_hid_register_rejected">系统拒绝注册 HID 键盘；可能已有其他 HID 应用占用该 Profile</string>
+    <string name="error_bluetooth_adapter_unavailable">蓝牙适配器不可用</string>
+    <string name="error_invalid_device_address">无效的蓝牙设备地址</string>
+    <string name="error_bluetooth_device_permission">无法访问蓝牙设备，附近设备权限可能已被撤销</string>
+    <string name="error_hid_connect_failed">无法发起 HID 连接；请确认电脑与手机已完成配对</string>
+    <string name="error_keyboard_not_connected">键盘尚未连接电脑</string>
+    <string name="error_key_outside_descriptor">拒绝发送描述符范围外的按键</string>
+    <string name="error_key_report_failed">按键报告发送失败，请检查蓝牙连接</string>
+    <string name="error_key_thread_stopped">按键发送线程已经停止</string>
+    <string name="error_hid_disconnect_failed">无法断开 HID 蓝牙连接</string>
+    <string name="error_hid_disconnect_schedule_failed">无法调度蓝牙断开操作</string>
+    <string name="error_hid_reply_request_permission">无法回复 HID 请求，附近设备权限可能已被撤销</string>
+    <string name="error_overlay_show_failed">无法显示悬浮按钮</string>
+    <string name="error_overlay_move_failed">无法移动悬浮按钮</string>
+
+    <string name="unnamed_device">未命名设备</string>
+    <string name="device_address_unavailable">地址不可用</string>
+    <string name="paired_device_label">%1$s\n%2$s</string>
+
+    <string name="hid_sdp_name" translatable="false">PauseSender Keyboard</string>
+    <string name="hid_sdp_description" translatable="false">Three-key video remote</string>
+    <string name="hid_sdp_provider" translatable="false">PauseSender</string>
+</resources>

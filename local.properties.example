@@ -1,0 +1,3 @@
+## Location of the Android SDK.
+## You can also configure this by setting the ANDROID_HOME environment variable.
+# sdk.dir=C\:\\Users\\<Username>\\AppData\\Local\\Android\\Sdk

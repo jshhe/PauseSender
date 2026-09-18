@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_subtitle">Turn your phone into a three-button Bluetooth remote for your computer</string>
+    <string name="select_language">Choose app language</string>
+    <string name="language_dialog_title">App language</string>
+    <string name="language_follow_system">Follow system</string>
+
+    <string name="status_checking">Checking device status…</string>
+    <string name="status_ready_label">Ready</string>
+    <string name="status_connected_label">Keyboard connected</string>
+    <string name="status_attention_label">Action needed</string>
+    <string name="status_error_label">Something went wrong</string>
+    <string name="status_support_ready">Complete the three steps below to control video over other apps.</string>
+    <string name="status_support_connected">The floating controls can now send Space and the Left and Right Arrow keys.</string>
+    <string name="status_support_attention">Continue with the current step below. PauseSender keeps the settings you have completed.</string>
+    <string name="status_support_error">Check the permissions and Bluetooth status, then try again.</string>
+    <string name="status_allow_nearby_devices">Allow the nearby devices permission first</string>
+    <string name="status_enable_bluetooth">Turn on Bluetooth</string>
+    <string name="status_ready_to_pair">Device ready. Tap “Start pairing”</string>
+
+    <string name="section_prepare">Prepare your phone</string>
+    <string name="section_pair">Pair with your computer</string>
+    <string name="section_overlay">Enable floating controls</string>
+    <string name="prepare_description">Allow nearby devices access and turn on Bluetooth. PauseSender does not need location or accessibility permissions.</string>
+    <string name="overlay_description">After connecting your computer, show a draggable control bar to pause, skip forward, or go back.</string>
+    <string name="grant_bluetooth">Allow nearby devices access</string>
+    <string name="enable_bluetooth">Turn on Bluetooth</string>
+    <string name="start_pairing">Start pairing</string>
+    <string name="discover_again">Make this phone discoverable again</string>
+    <string name="pairing_instructions">On your computer, open Settings → Bluetooth &amp; devices → Add device → Bluetooth. Select this phone and confirm the pairing code on both devices. The computer should recognize it as a keyboard.</string>
+    <string name="paired_devices">Paired devices (tap to connect)</string>
+    <string name="no_paired_devices">No paired devices yet</string>
+    <string name="grant_overlay">Allow display over other apps</string>
+    <string name="show_overlay">Show floating controls</string>
+    <string name="hide_overlay">Hide controls and disconnect</string>
+    <string name="stop_service">Disconnect and stop</string>
+    <string name="backward">Back: send Left Arrow</string>
+    <string name="pause">Pause or resume: send Space</string>
+    <string name="forward">Forward: send Right Arrow</string>
+    <string name="drag_overlay">Drag the floating controls</string>
+    <string name="move_overlay_left">Move the floating controls left</string>
+    <string name="move_overlay_right">Move the floating controls right</string>
+    <string name="move_overlay_up">Move the floating controls up</string>
+    <string name="move_overlay_down">Move the floating controls down</string>
+    <string name="privacy_footer">No internet access · No accessibility service · Sends only three keyboard keys</string>
+
+    <string name="state_not_started">Bluetooth keyboard not started</string>
+    <string name="state_paired_connecting">Paired with %1$s. Connecting the keyboard…</string>
+    <string name="state_paired_connecting_unknown">Device paired. Connecting the keyboard…</string>
+    <string name="state_service_starting">Keyboard service started. Preparing the HID Profile…</string>
+    <string name="state_profile_ready">HID Profile ready. Registering the keyboard…</string>
+    <string name="state_keyboard_registered">Keyboard registered. Find and pair with this phone from your computer</string>
+    <string name="state_keyboard_unregistered">HID keyboard unregistered</string>
+    <string name="state_connecting_device">Connecting to %1$s…</string>
+    <string name="state_connecting_device_unknown">Connecting to the Bluetooth device…</string>
+    <string name="state_connected_device">Connected to %1$s. You can now enable the floating controls</string>
+    <string name="state_connected_device_unknown">Connected to the computer. You can now enable the floating controls</string>
+    <string name="state_disconnecting_device">Disconnecting from %1$s…</string>
+    <string name="state_disconnecting_device_unknown">Disconnecting Bluetooth…</string>
+    <string name="state_device_disconnected">%1$s disconnected</string>
+    <string name="state_device_disconnected_unknown">Bluetooth device disconnected</string>
+    <string name="state_device_disconnected_overlay_paused">%1$s disconnected. The floating controls are paused</string>
+    <string name="state_device_disconnected_overlay_paused_unknown">Bluetooth device disconnected. The floating controls are paused</string>
+    <string name="state_overlay_hidden_disconnecting">Floating controls hidden. Disconnecting Bluetooth…</string>
+    <string name="state_overlay_hidden_disconnecting_device">Floating controls hidden. Disconnecting from %1$s…</string>
+    <string name="state_service_stopped">Bluetooth keyboard service stopped</string>
+
+    <string name="notification_channel">Bluetooth keyboard connection</string>
+    <string name="notification_channel_description">Keeps the PauseSender Bluetooth keyboard and floating controls running</string>
+    <string name="notification_title">PauseSender keyboard is running</string>
+    <string name="notification_stop">Stop</string>
+    <string name="notification_hide">Hide and disconnect</string>
+
+    <string name="toast_bluetooth_not_enabled">Bluetooth is not turned on</string>
+    <string name="toast_discoverable_denied">This phone was not made discoverable</string>
+    <string name="toast_open_bluetooth_settings_failed">Unable to open the system Bluetooth screen</string>
+    <string name="toast_open_discoverable_settings_failed">Unable to open the Bluetooth discoverability screen</string>
+    <string name="toast_overlay_permission_granted_reconnect">Display-over-apps permission granted. Reconnect the computer first</string>
+    <string name="toast_connect_before_overlay_permission">Pair and connect the computer first</string>
+    <string name="toast_open_overlay_settings_failed">Unable to open the display-over-apps settings</string>
+    <string name="toast_device_address_permission">Unable to read the Bluetooth address. Nearby devices permission may have been revoked</string>
+    <string name="toast_bluetooth_permission_required">Nearby devices permission is required to emulate a Bluetooth keyboard</string>
+
+    <plurals name="discoverable_duration_seconds">
+        <item quantity="one">This phone will be discoverable to computers for %1$d second</item>
+        <item quantity="other">This phone will be discoverable to computers for %1$d seconds</item>
+    </plurals>
+
+    <string name="unsupported_bluetooth">This device has no available classic Bluetooth adapter</string>
+    <string name="error_missing_connect_device">No Bluetooth device was provided for the connection</string>
+    <string name="error_connect_before_overlay">Connect a computer before enabling the floating controls</string>
+    <string name="error_overlay_permission_missing">Display-over-apps permission has not been granted</string>
+    <string name="error_unconfigured_key">Refusing to send an unconfigured key</string>
+    <string name="error_foreground_service_permission">Unable to start the Bluetooth foreground service. Check the nearby devices permission</string>
+    <string name="error_overlay_disconnect_failed">Floating controls hidden, but the Bluetooth disconnection could not be started</string>
+    <string name="error_hid_service_disconnected">The Bluetooth HID service disconnected. Turn Bluetooth off and on, then try again</string>
+    <string name="error_hid_reply_report_permission">Unable to reply to the HID report. Nearby devices permission may have been revoked</string>
+    <string name="error_hid_profile_permission">Unable to obtain the Bluetooth HID Profile. Nearby devices permission may have been revoked</string>
+    <string name="error_hid_profile_unavailable">Unable to obtain the Bluetooth HID Device Profile. The phone manufacturer may have disabled it</string>
+    <string name="error_hid_register_permission">Unable to register the HID keyboard. Nearby devices permission may have been revoked</string>
+    <string name="error_hid_register_rejected">The system rejected HID keyboard registration. Another HID app may already be using the Profile</string>
+    <string name="error_bluetooth_adapter_unavailable">Bluetooth adapter unavailable</string>
+    <string name="error_invalid_device_address">Invalid Bluetooth device address</string>
+    <string name="error_bluetooth_device_permission">Unable to access the Bluetooth device. Nearby devices permission may have been revoked</string>
+    <string name="error_hid_connect_failed">Unable to start the HID connection. Confirm that the computer and phone are paired</string>
+    <string name="error_keyboard_not_connected">The keyboard is not connected to a computer</string>
+    <string name="error_key_outside_descriptor">Refusing to send a key outside the descriptor range</string>
+    <string name="error_key_report_failed">Unable to send the key report. Check the Bluetooth connection</string>
+    <string name="error_key_thread_stopped">The key-sending thread has stopped</string>
+    <string name="error_hid_disconnect_failed">Unable to disconnect the Bluetooth HID connection</string>
+    <string name="error_hid_disconnect_schedule_failed">Unable to schedule the Bluetooth disconnection</string>
+    <string name="error_hid_reply_request_permission">Unable to reply to the HID request. Nearby devices permission may have been revoked</string>
+    <string name="error_overlay_show_failed">Unable to show the floating controls</string>
+    <string name="error_overlay_move_failed">Unable to move the floating controls</string>
+
+    <string name="unnamed_device">Unnamed device</string>
+    <string name="device_address_unavailable">Address unavailable</string>
+    <string name="paired_device_label">%1$s\n%2$s</string>
+</resources>
